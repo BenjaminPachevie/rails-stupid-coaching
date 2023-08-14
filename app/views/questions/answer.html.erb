@@ -1,0 +1,20 @@
+<head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+<h1>Stupid Coaching</h1>
+<div class="card mb-3 center">
+  <%= params[:answer] %>
+  <br>
+  <p><em>- You</em></p>
+</div>
+<div class="card mb-3">
+  <%= @response %>
+  <br>
+   <p><em>- Your coach</em></p>
+</div>
+<p class="text-decoration-none"><%= link_to "Ask a new question", ask_path %></p>
+</body>
